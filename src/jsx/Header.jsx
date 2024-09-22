@@ -24,7 +24,7 @@ function Header() {
 
     return (
         <header className={visible ? 'visible' : 'hidden'}>
-             <Link to="/">home</Link>
+            <Link to="/">home</Link>
             <a href="#about-me">about me</a>
             <a href="#my-work">my work</a>
             <a href="#resume">resume</a>

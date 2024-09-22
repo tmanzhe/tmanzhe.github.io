@@ -13,10 +13,9 @@ function App() {
       <div id="root">
         <Mouse />
         <Header />
-        <Home />
         <main>
           <Routes>
-            <Route path="/home" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/life" element={<Life />} />
           </Routes>
         </main>
