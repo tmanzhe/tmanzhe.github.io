@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
+
+.design-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 100px 0;
+  font-family: 'Helvetica Neue';
+}
+
+.my-work-text {
+    font-size: 60px;
+    position: relative;
+    top: -100px; 
+    margin-bottom: 20px;
+    
+}
+
+
+.timeline {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.5fr 3px 1.5fr;
+  gap: 30px;
+}
+
+.timeline-content {
+  padding: 25px;
+  background: white;
+  color: rgb(65, 63, 63);
+  border-radius: 10px;
+  transition: 0.4s ease;
+  overflow-wrap: break-word !important;
+  width: 90%;
+  margin: 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1.8s ease, transform 1.5s ease;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  font-size: 20px;
+  line-height: 1.3;
+
+}
+
+.timeline-content::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #AAAAAA, #92B4EC, #F4F9F9, #FFF5E4);
+  border-radius: 12px;
+  z-index: -1;
+  animation: animatedBorder 4s linear infinite;
+}
+
+@keyframes animatedBorder {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.timeline-content::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: white;
+  border-radius: 10px;
+  z-index: -1;
+}
+.timeline-content.in-view {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-middle {
+  position: relative;
+  background-image: linear-gradient(125deg, #93A5CF, #F1F1EF);
+  width: 3px;
+  height: 0;
+  transition: height 2.5s ease;
+}
+
+.timeline-middle.in-view {
+  height: 100%;
+}
+
+.timeline-circle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-image: linear-gradient(125deg, #93A5CF, #F1F1EF);
+  transform: translateX(-50%) scale(0);
+  transition: transform 1s ease;
+}
+
+.timeline-middle.in-view .timeline-circle {
+  transform: translateX(-50%) scale(1);
+}
+
+@media screen and (min-width: 768px) {
+  .timeline {
+    grid-template-columns: 1fr 3px 1fr;
+  }
+}
+.images {
+    max-width: 300px; /* Set your desired max width */
+    margin: 0 auto; /* Center the carousel */
+    overflow: hidden; /* Prevent overflow */
+}
+
+.carousel-image {
+    width: 100%; /* Make it responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: add border radius */
+    object-fit: cover; /* Cover the area without distortion */
+}

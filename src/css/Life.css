@@ -1,0 +1,79 @@
+
+.life {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+    max-width: 1800px; 
+    margin: 0 auto; 
+    margin-bottom:100px;
+    margin-top: 250px;
+
+    animation: fadeInSlide 2s ease-out forwards; /* Fade and slide in */
+    opacity: 1; /* Make sure it's visible */
+
+}
+
+
+.life-title {
+    text-align: center; /* Center the title */
+    font-family: 'Helvetica Neue', 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(65, 63, 63);
+    width: 100%; /* Ensure it takes full width */
+    display: block; /* Ensure it’s block-level */
+    position: relative; /* Add relative positioning */
+    margin-top: -400px;
+    z-index: 10; /* Bring title above images */
+}
+
+
+
+
+.life-img-container {
+    position: relative;
+    flex: 1 1 calc(25% - 20px); 
+    box-sizing: border-box;
+    border: 5px solid #fff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px; 
+    padding: 10px; 
+    overflow: hidden; 
+}
+
+.life-img-container img {
+    width: 100%; 
+    height: auto;
+    display: block;
+    border-radius: 5px; 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    opacity: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.overlay .life-desc {
+    padding: 20px;
+    font-size: 1.2em;
+}
+
+.life-img-container:hover img {
+    opacity: 0.6; 
+}
+
+.life-img-container:hover .overlay {
+    opacity: 1; 
+}

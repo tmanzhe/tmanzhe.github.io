@@ -1,0 +1,126 @@
+.about-me.wrapper {
+    width: 90%; /* Set a specific width */
+    max-width: 1500px; /* Optional: set a max width */
+    margin: 0 auto; /* Center the wrapper */
+    background-color: rgba(255, 255, 255, 0.9); /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    margin-bottom: 150px;
+    margin-top:150px;
+    opacity: 0; /* Start invisible */
+    transform: translateY(40px); /* Slide in effect */
+    transition: opacity 1s ease-out, transform 3s ease-out; /* Fade and slide in */
+}
+
+.about-me.wrapper.animate {
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset position */
+}
+
+.about-me.container {
+    text-align: left; /* Align text to the left for inline-block items */
+}
+
+.about-title {
+    font-size: 60px; /* Adjust the size as needed */
+    font-weight: bold;
+    text-align: center; /* Center the title */
+    color: rgb(65, 63, 63); /* Match the color with your text */
+
+}
+
+
+.description ,
+.image-container {
+    display: inline-block; /* Use inline-block for side-by-side layout */
+    vertical-align: top; /* Align the tops of the elements */
+    width: 45%; /* Adjust width as needed */
+    margin-right: 20px; /* Space between items */
+}
+
+.description {
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 20px; 
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(65, 63, 63);
+    font-family: 'Helvetica Neue', 'Times New Roman', Times, serif;
+    border-radius: 10px;
+    font-size: 23px;
+    line-height: 1.5;
+    border: 1px solid #c9c3c3; 
+}
+
+.image-container {
+    text-align: center; /* Center the image */
+}
+
+.image-container img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px; /* Add margin around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    padding: 30px; 
+    border-radius: 15px;
+}
+
+.hello-text {
+    width: 13ch; /* Adjust width for typewriter effect */
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+    /* Initial state, before animation is triggered */
+    visibility: hidden;
+    animation: none; 
+}
+
+.animate .hello-text {
+    visibility: visible; /* Make the text visible when section is in view */
+    animation: typing 2s steps(22) forwards, blink .5s step-end infinite alternate; /* Typewriter effect when visible */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 13ch;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+.highlight-dev {
+    background-color: #FEF9D9; 
+    padding: 2px 4px; 
+    border-radius: 4px;
+}
+
+.highlight-york {
+    background-color: #f89aa1; 
+    padding: 2px 4px; 
+    border-radius: 4px; 
+}
+
+.highlight-schulich {
+    background-color: #bed9f5; 
+    padding: 2px 4px; 
+}
+
+/* Optional Media Query for Mobile Layout */
+@media (max-width: 768px) {
+    .description,
+    .image-container {
+        display: block; /* Stack items on smaller screens */
+        width: 100%; /* Full width for each item */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add bottom margin for spacing */
+    }
+}
