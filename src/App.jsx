@@ -13,10 +13,10 @@ function App() {
       <div id="root">
         <Mouse />
         <Header />
+        <Home />
         <main>
           <Routes>
-            {/* Define the home route */}
-            <Route path="/" element={<Home />} />
+  
             <Route path="/home" element={<Home />} />
             <Route path="/life" element={<Life />} />
           </Routes>
