@@ -16,7 +16,6 @@ function App() {
         <Home />
         <main>
           <Routes>
-  
             <Route path="/home" element={<Home />} />
             <Route path="/life" element={<Life />} />
           </Routes>
