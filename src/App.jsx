@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Life from './pages/Life';
 import Mouse from './jsx/Mouse';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
@@ -15,7 +15,8 @@ function App() {
         <Header />
         <main>
           <Routes>
-            <Route path="/" element={<Navigate to="/home" />} />
+            {/* Define the home route */}
+            <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/life" element={<Life />} />
           </Routes>
