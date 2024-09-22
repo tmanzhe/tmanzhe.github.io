@@ -1,7 +1,6 @@
 import React from 'react';
 import '../css/Life.css';
 
-// Import images correctly using relative paths
 import img1 from '../assets/converted/IMG_0964.jpg';
 import img2 from '../assets/converted/IMG_1102.jpg';
 import img3 from '../assets/converted/IMG_1108.jpg';
