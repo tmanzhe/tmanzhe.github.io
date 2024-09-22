@@ -5,11 +5,11 @@ import MyWork from '../jsx/MyWork';
 
 function Home() {
   return (
-    <main>
+    <section>
       <LandingAnimation />
       <AboutMe />
       <MyWork/>
-    </main>
+    </section>
   );
 }
 
