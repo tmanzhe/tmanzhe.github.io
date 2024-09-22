@@ -6,6 +6,7 @@ import Life from './pages/Life';
 import Mouse from './jsx/Mouse';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+/* this was annoying*/
 
 function App() {
   return (
