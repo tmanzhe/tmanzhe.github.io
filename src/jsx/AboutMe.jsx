@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import '../css/AboutMe.css';
-import headshot from '../assets/converted/headshot2.JPG';
+import headshot from '../assets/converted/headshot1.jpg';
 
 function AboutMe() {
     const [isVisible, setIsVisible] = useState(false);

@@ -26,6 +26,8 @@ import { SiVisualstudiocode } from 'react-icons/si';
 import { SiGit } from 'react-icons/si';
 import { SiGithub } from 'react-icons/si';
 import { SiFigma } from 'react-icons/si';
+import { SiUnity } from 'react-icons/si';
+import { SiAdobeaftereffects } from 'react-icons/si';
 
 
 
@@ -136,6 +138,12 @@ function MyWork() {
                 </a>
                 <a href="https://www.java.com/" target="_blank" rel="noopener noreferrer">
                     <img src={Java} alt="Java" className="work-icon" />
+                </a>
+                <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">
+                    <SiUnity className="work-icon" style={{ color: '# #007ACC' }} />
+                </a>
+                <a href="https://www.adobe.com/ca/products/aftereffects/campaign/pricing.html?gclid=Cj0KCQjwgL-3BhDnARIsAL6KZ68j0_MhCFgN1CKKzeXzhxbPJOOfqXliYv0S9scl-xysveJCa9j5ecoaAndKEALw_wcB&sdid=KKQOW&kw=semgeneric&mv=search&ef_id=Cj0KCQjwgL-3BhDnARIsAL6KZ68j0_MhCFgN1CKKzeXzhxbPJOOfqXliYv0S9scl-xysveJCa9j5ecoaAndKEALw_wcB:G:s&s_kwcid=AL!3085!3!611455819822!e!!g!!adobe%20after%20effects!2006596009!78340226396&gad_source=1" target="_blank" rel="noopener noreferrer">
+                    <SiAdobeaftereffects className="work-icon" style={{ color: '#311B92' }} />
                 </a>
             </div>
 
