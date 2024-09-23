@@ -166,7 +166,7 @@ function MyWork() {
 
                     <p>i collaborated with backend components using <strong>aws dynamodb</strong> and <strong>aws s3</strong>. my focus was on connecting and tweaking systems for better data retrieval and managing custom content permissions for secure data handling.</p>
 
-                    <p>i created features from scratch and identified bugs, including issues like identifying and optimizing internet connectivity. i also collaborated with cross-functional teams to implement efficiency enhancements.</p>
+                    <p>i created features from scratch and identified bugs, including issues like identifying and optimizing internet connectivity and collaborated with cross-functional teams to implement efficiency enhancements.</p>
 
                     <p>fun fact: as our app is powered by <strong>gemini</strong>, we participated in the <strong>gemini ai competition</strong> and are currently awaiting the results.</p>
 

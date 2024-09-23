@@ -27,7 +27,7 @@ function Header() {
             <Link to="/">home</Link>
             <a href="#about-me">about me</a>
             <a href="#my-work">my work</a>
-            <a href="#resume">resume</a>
+            <a href="https://drive.google.com/file/d/1F1jqGPXQrCR7v_4BTHEOIYdAw5Dufs7R/view?usp=sharing">resume</a>
             <Link to="/life">my life</Link>
         </header>
     );
