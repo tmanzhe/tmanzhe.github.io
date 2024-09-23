@@ -1,11 +1,14 @@
 import React, { useEffect, useRef } from 'react';
-import ITMZLogo from '../assets/company logo/ITMZ.png';
+import ITMZLogo from '../assets/demo/itmz.png';
 import Clicker from '../assets/demo/clicker.png';
 import VirtualMouse from '../assets/demo/virtual-mouse.png';
 import DriveOne from '../assets/demo/drive-1.png';
 import DriveTwo from '../assets/demo/drive-2.png';
-import Mad from '../assets/demo/mad.png'
-import WebsiteCode from '../assets/demo/website-code.jpg'
+import Mad from '../assets/demo/mad.png';
+import WebsiteCode from '../assets/demo/website-code.jpg';
+import gem from '../assets/demo/gemini.png';
+
+
 
 
 import 'slick-carousel/slick/slick.css'; 
@@ -78,7 +81,7 @@ function MyWork() {
                             <div>
                                 <img src={ITMZLogo} alt="ITMZ Logo" className="carousel-image" />
                             </div>
-                                <img src={ITMZLogo} alt="ITMZ Logo" className="carousel-image" />
+                                <img src={gem} alt="ITMZ Logo" className="carousel-image" />
                         </Slider>
                     </div>
                 </div>
