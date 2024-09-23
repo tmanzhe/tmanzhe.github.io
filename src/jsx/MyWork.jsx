@@ -29,7 +29,7 @@ import { SiFigma } from 'react-icons/si';
 import { SiUnity } from 'react-icons/si';
 import { SiAdobeaftereffects } from 'react-icons/si';
 
-
+/* */
 
 import 'slick-carousel/slick/slick.css'; 
 import 'slick-carousel/slick/slick-theme.css';
