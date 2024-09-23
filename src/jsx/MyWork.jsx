@@ -7,13 +7,35 @@ import DriveTwo from '../assets/demo/drive-2.png';
 import Mad from '../assets/demo/mad.png';
 import WebsiteCode from '../assets/demo/website-code.jpg';
 import gem from '../assets/demo/gemini.png';
-
+import Dynamob from '../assets/logos/amazondynamodb.svg';
+import Java from '../assets/logos/java.svg';
+import MediaPipe from '../assets/logos/mediapipe.svg';
+import { SiAwsamplify } from 'react-icons/si';
+import { SiXcode } from 'react-icons/si';
+import { SiAndroidstudio } from 'react-icons/si';
+import { SiGooglegemini } from 'react-icons/si';
+import { SiJavascript } from 'react-icons/si';
+import { SiHtml5 } from 'react-icons/si';
+import { SiCss3 } from 'react-icons/si';
+import { SiPython } from 'react-icons/si';
+import { SiOpencv } from 'react-icons/si';
+import { SiReact } from 'react-icons/si';
+import { SiVite } from 'react-icons/si';
+import { SiFlutter, SiDart } from 'react-icons/si';
+import { SiVisualstudiocode } from 'react-icons/si';
+import { SiGit } from 'react-icons/si';
+import { SiGithub } from 'react-icons/si';
+import { SiFigma } from 'react-icons/si';
 
 
 
 import 'slick-carousel/slick/slick.css'; 
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
+
+
+
+
 
 import '../css/MyWork.css';
 
@@ -54,6 +76,70 @@ function MyWork() {
         <section id = "my-work" className="design-section" ref={timelineRef}>
             <h1 className = "my-work-text">my work</h1>
 
+            <div className="work-icons-row">
+                <a href="https://aws.amazon.com/amplify/" target="_blank" rel="noopener noreferrer">
+                    <SiAwsamplify className="work-icon" style={{ color: '#FF9900' }} />
+                </a>
+                <a href="https://developer.apple.com/xcode/" target="_blank" rel="noopener noreferrer">
+                    <SiXcode className="work-icon" style={{ color: '#1575F9' }} />
+                </a>
+                <a href="https://developer.android.com/studio" target="_blank" rel="noopener noreferrer">
+                    <SiAndroidstudio className="work-icon" style={{ color: '#3DDC84' }} />
+                </a>
+                <a href="https://gemini.google/advanced/?hl=en-CA" target="_blank" rel="noopener noreferrer">
+                    <SiGooglegemini className="work-icon" style={{ color: '#4285F4' }} />
+                </a>
+                <a href="https://www.javascript.com/" target="_blank" rel="noopener noreferrer">
+                    <SiJavascript className="work-icon" style={{ color: '#F7DF1E' }} />
+                </a>
+                <a href="https://html.spec.whatwg.org/multipage/" target="_blank" rel="noopener noreferrer">
+                    <SiHtml5 className="work-icon" style={{ color: '#E34F26' }} />
+                </a>
+                <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank" rel="noopener noreferrer">
+                    <SiCss3 className="work-icon" style={{ color: '#1572B6' }} />
+                </a>
+                <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
+                    <SiPython className="work-icon" style={{ color: '#3776AB' }} />
+                </a>
+                <a href="https://opencv.org/" target="_blank" rel="noopener noreferrer">
+                    <SiOpencv className="work-icon" style={{ color: '#5C3EE8' }} />
+                </a>
+                <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
+                    <SiReact className="work-icon" style={{ color: '#61DAFB' }} />
+                </a>
+                <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">
+                    <SiVite className="work-icon" style={{ color: '#646CFF' }} />
+                </a>
+                <a href="https://flutter.dev/" target="_blank" rel="noopener noreferrer">
+                    <SiFlutter className="work-icon" style={{ color: '#02569B' }} />
+                </a>
+                <a href="https://dart.dev/" target="_blank" rel="noopener noreferrer">
+                    <SiDart className="work-icon" style={{ color: '#0175C2' }} />
+                </a>
+                <a href="https://code.visualstudio.com/" target="_blank" rel="noopener noreferrer">
+                    <SiVisualstudiocode className="work-icon" style={{ color: '#007ACC' }} />
+                </a>
+                <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">
+                    <SiGit className="work-icon" style={{ color: '#F05032' }} />
+                </a>
+                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                    <SiGithub className="work-icon" style={{ color: '#181717' }} />
+                </a>
+                <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">
+                    <SiFigma className="work-icon" style={{ color: '#F24E1E' }} />
+                </a>
+                <a href="https://aws.amazon.com/dynamodb/" target="_blank" rel="noopener noreferrer">
+                    <img src={Dynamob} alt="DynamoDB" className="work-icon" />
+                </a>
+                <a href="https://ai.google.dev/edge/mediapipe/solutions/guide#legacy" target="_blank" rel="noopener noreferrer">
+                    <img src={MediaPipe} alt="MediaPipe" className="work-icon" />
+                </a>
+                <a href="https://www.java.com/" target="_blank" rel="noopener noreferrer">
+                    <img src={Java} alt="Java" className="work-icon" />
+                </a>
+            </div>
+
+
             <div className="timeline">
                 {/* Empty div for spacing */}
                 <div className="timeline-empty"></div>
@@ -76,6 +162,7 @@ function MyWork() {
 
                     <p>fun fact: as our app is powered by <strong>gemini</strong>, we participated in the <strong>gemini ai competition</strong> and are currently awaiting the results.</p>
 
+                    
                     <div className="images">
                         <Slider {...settings}>
                             <div>
@@ -84,6 +171,35 @@ function MyWork() {
                                 <img src={gem} alt="ITMZ Logo" className="carousel-image" />
                         </Slider>
                     </div>
+
+                    <div className="tech-logos">
+                        <a href="https://flutter.dev/" target="_blank" rel="noopener noreferrer">
+                            <SiFlutter className="tech-logo" style={{ color: '#02569B' }} />
+                        </a>
+                        <a href="https://dart.dev/" target="_blank" rel="noopener noreferrer">
+                            <SiDart className="tech-logo" style={{ color: '#0175C2' }} />
+                        </a>
+                        <a href="https://aws.amazon.com/amplify/" target="_blank" rel="noopener noreferrer">
+                            <SiAwsamplify className="tech-logo" style={{ color: '#FF9900' }} />
+                        </a>
+                        <a href="https://developer.apple.com/xcode/" target="_blank" rel="noopener noreferrer">
+                            <SiXcode className="tech-logo" style={{ color: '#1575F9' }} />
+                        </a>
+                        <a href="https://developer.android.com/studio" target="_blank" rel="noopener noreferrer">
+                            <SiAndroidstudio className="tech-logo" style={{ color: '#3DDC84' }} />
+                        </a>
+                        <a href="https://gemini.google/advanced/?hl=en-CA" target="_blank" rel="noopener noreferrer">
+                            <SiGooglegemini className="tech-logo" style={{ color: '#4285F4' }} />
+                        </a>
+                        <a href="https://www.figma.com/" target="_blank" rel="noopener noreferrer">
+                            <SiFigma className="tech-logo" style={{ color: '#F24E1E' }} />
+                        </a>
+                        <a href="https://aws.amazon.com/dynamodb/" target="_blank" rel="noopener noreferrer">
+                            <img src={Dynamob} alt="AWS DynamoDB Logo" className="tech-logo" />
+                        </a>
+                    </div>
+
+
                 </div>
 
                 <div className="timeline-component timeline-content">
@@ -103,6 +219,20 @@ function MyWork() {
                                 <img src={DriveTwo} alt="ITMZ Logo" className="carousel-image" />
                         </Slider>
                     </div>
+
+                    <div className="tech-logos">
+                        <a href="https://www.javascript.com/" target="_blank" rel="noopener noreferrer">
+                            <SiJavascript className="tech-logo" style={{ color: '#F7DF1E' }} />
+                        </a>
+                        <a href="https://html.spec.whatwg.org/multipage/" target="_blank" rel="noopener noreferrer">
+                            <SiHtml5 className="tech-logo" style={{ color: '#E34F26' }} />
+                        </a>
+                        <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank" rel="noopener noreferrer">
+                            <SiCss3 className="tech-logo" style={{ color: '#1572B6' }} />
+                        </a>
+                    </div>
+
+
                 </div>
 
                 {/* Timeline middle with circle */}
@@ -133,6 +263,19 @@ function MyWork() {
                                 <img src={Clicker} alt="ITMZ Logo" className="carousel-image" />
                         </Slider>
                     </div>
+
+                    
+                    <div className="tech-logos">
+                        <a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">
+                            <SiPython className="tech-logo" style={{ color: '#3776AB' }} />
+                        </a>
+                        <a href="https://opencv.org/" target="_blank" rel="noopener noreferrer">
+                            <SiOpencv className="tech-logo" style={{ color: '#5C3EE8' }} />
+                        </a>
+                        <a href="https://ai.google.dev/edge/mediapipe/solutions/guide#legacy" target="_blank" rel="noopener noreferrer">
+                            <img src={MediaPipe} alt="MediaPipe Logo" className="tech-logo" />
+                        </a>
+                    </div>
                 
                 </div>
 
@@ -148,7 +291,28 @@ function MyWork() {
                                 <img src={Mad} alt="ITMZ Logo" className="carousel-image" />
                         </Slider>
                     </div>
+
+                    <div className="tech-logos">
+                        <a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">
+                            <SiVite className="tech-icon" style={{ color: '#646CFF' }} />
+                        </a>
+                        <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
+                            <SiReact className="tech-icon" style={{ color: '#61DAFB' }} />
+                        </a>
+                        <a href="https://www.javascript.com/" target="_blank" rel="noopener noreferrer">
+                            <SiJavascript className="tech-logo" style={{ color: '#F7DF1E' }} />
+                        </a>
+                        <a href="https://html.spec.whatwg.org/multipage/" target="_blank" rel="noopener noreferrer">
+                            <SiHtml5 className="tech-logo" style={{ color: '#E34F26' }} />
+                        </a>
+                        <a href="https://www.w3.org/Style/CSS/Overview.en.html" target="_blank" rel="noopener noreferrer">
+                            <SiCss3 className="tech-logo" style={{ color: '#1572B6' }} />
+                        </a>
+                       
+                    </div>
                 </div>
+
+                
             </div>
         </section>
     );

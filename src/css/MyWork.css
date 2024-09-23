@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');
 
+
 .design-section {
   display: flex;
   flex-direction: column;
@@ -129,4 +130,48 @@
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Optional: add border radius */
     object-fit: cover; /* Cover the area without distortion */
+}
+
+
+
+.tech-logos {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+
+}
+
+.tech-logo {
+  width: 30px;
+  color: #000; /* Change color if needed */
+  transition: transform 0.3s ease;
+
+}
+
+.tech-logo:hover{
+  transform: scale(1.1); /* Slight zoom on hover */
+
+}
+
+.work-icons-row {
+  opacity: 0.8;
+  display: flex;
+  justify-content: center; /* Centers the icons */
+  align-items: center;
+  gap: 20px; /* Spacing between the icons */
+  flex-wrap: wrap; /* Allows the icons to wrap to the next row if necessary */
+  margin-top: 30px;
+  margin-bottom: 200px;
+}
+
+.work-icon {
+  width: 40px;
+  height: 40px;
+  color: #333; /* Adjust the color as needed */
+  transition: transform 0.3s ease;
+}
+
+.work-icon:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
 }
