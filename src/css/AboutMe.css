@@ -1,6 +1,6 @@
 .about-me.wrapper {
     width: 90%; /* Set a specific width */
-    max-width: 1500px; /* Optional: set a max width */
+    max-width: 100%; /* Optional: set a max width */
     margin: 0 auto; /* Center the wrapper */
     background-color: rgba(255, 255, 255, 0.9); /* Background color */
     border-radius: 10px; /* Rounded corners */
@@ -38,8 +38,6 @@
 }
 
 .description {
-    margin-top: 50px;
-    margin-left: 50px;
     padding: 20px; 
     background-color: rgba(255, 255, 255, 0.8);
     color: rgb(65, 63, 63);
@@ -114,13 +112,41 @@
     padding: 2px 4px; 
 }
 
-/* Optional Media Query for Mobile Layout */
-@media (max-width: 768px) {
+/* Media Query for Tablets */
+@media (max-width: 1024px) {
+    .about-me.container {
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        justify-content: center; /* Center items when wrapped */
+    }
+
     .description,
     .image-container {
-        display: block; /* Stack items on smaller screens */
-        width: 100%; /* Full width for each item */
-        margin-right: 0; /* Remove right margin */
-        margin-bottom: 20px; /* Add bottom margin for spacing */
+        flex-basis: 48%; /* Ensure items take up nearly half of the available space */
+        min-width: 300px; /* Prevent shrinking too much */
+        margin: 10px; /* Reduce margin for better fit */
+    }
+
+    .image-container {
+        max-width: 45%; /* Slightly increase image container width for balance */
+    }
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+    .about-me.container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .description,
+    .image-container {
+        flex-basis: 100%; /* Full width for each item */
+        width: 100%; /* Full width */
+        margin: 0; /* Remove margin for a cleaner look */
+        margin-bottom: 20px; /* Add margin between stacked items */
+    }
+
+    .image-container img {
+        max-width: 80%; /* Ensure image is smaller on mobile */
+        margin: 0 auto; /* Center the image */
     }
 }
