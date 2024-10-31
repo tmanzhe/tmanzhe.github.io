@@ -47,9 +47,9 @@ function AboutMe() {
                     <p className={`hello-text ${animateText ? 'animate' : ''}`} ref={helloTextRef}>
                         {animateText ? fullText : ''}
                     </p>
-                    <p className="transition-text">a <span className="highlight-dev">full-stack developer</span> currently pursuing a double degree, studying honours in CS at <span className="highlight-york">York University</span> and management at <span className="highlight-schulich">Schulich</span> in my final year.</p>
-                    <p className="life-text">outside of coding, I often spend my time working out or trying to be a gourmet chef  🏋️  👨‍🍳 </p>
-                    <p className="life-text2">its also likely that you would catch me hiking at absurds times, while planning a getaway trip in a foreign country 🏕  ✈️</p>
+                    <p className="transition-text">a <span className="highlight-dev">full-stack developer</span> currently pursuing a double degree, studying honours in CS at <span className="highlight-york">York University</span> and an additional year for management at <span className="highlight-schulich">Schulich School of Business</span></p>
+                    <p className="life-text">outside of coding, I often spend my time working out or trying to chef up new things 🏋️  👨‍🍳 </p>
+                    <p className="life-text2">i also like travelling alot and enjoying scenic walks 🏕  ✈️</p>
                     <p className="life-text3">feel free to check out some of my work and contact me!</p>
 
                 </div>

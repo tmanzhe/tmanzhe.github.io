@@ -162,13 +162,9 @@ function MyWork() {
                     <h2>mobile dev intern @ ITMZ</h2>
                     <small> june 2024 - present </small>
 
-                    <p>during my internship at itmz, i enhanced user experiences by designing and deploying innovative <strong>ui features</strong> with <strong>flutter</strong> and <strong>dart</strong>. these contributions significantly improved product capabilities.</p>
-
-                    <p>i collaborated with backend components using <strong>aws dynamodb</strong> and <strong>aws s3</strong>. my focus was on connecting and tweaking systems for better data retrieval and managing custom content permissions for secure data handling.</p>
-
-                    <p>i created features from scratch and identified bugs, including issues like identifying and optimizing internet connectivity and collaborated with cross-functional teams to implement efficiency enhancements.</p>
-
-                    <p>fun fact: as our app is powered by <strong>gemini</strong>, we participated in the <strong>gemini ai competition</strong> and are currently awaiting the results.</p>
+                    <p>im currently a Software Engineering Intern at <a href="https://itmz.app">ITMZ</a>, a personal inventory management platform. like a real life minecraft inventory system!</p> 
+                    
+                    <p> check us out!</p>
 
                     
                     <div className="images">
